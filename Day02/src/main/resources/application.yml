@@ -1,0 +1,12 @@
+spring:
+    application:
+        name: Day02
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/day02?serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=utf-8
+        username: root
+        password: 123123123
+
+
+mybatis-plus:
+    mapper-locations: classpath*:mapper/*.xml
