@@ -9,27 +9,32 @@ import java.util.Date;
 import lombok.Data;
 
 /**
- * 角色表
- * @TableName role
+ * 部门表
+ * @TableName dept
  */
-@TableName(value ="role")
+@TableName(value ="dept")
 @Data
-public class Role implements Serializable {
+public class Dept implements Serializable {
     /**
-     * 角色ID
+     * 部门ID
      */
     @TableId(type = IdType.AUTO)
     private Long id;
 
     /**
-     * 角色名称
+     * 上级部门ID
      */
-    private String roleName;
+    private Long parentId;
 
     /**
-     * 角色描述
+     * 部门名称
      */
-    private String remark;
+    private String deptName;
+
+    /**
+     * 排序
+     */
+    private Double orderNum;
 
     /**
      * 创建时间

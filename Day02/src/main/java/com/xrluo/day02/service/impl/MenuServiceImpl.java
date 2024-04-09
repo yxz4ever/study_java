@@ -8,8 +8,8 @@ import org.springframework.stereotype.Service;
 
 /**
 * @author K
-* @description 针对表【menu】的数据库操作Service实现
-* @createDate 2024-04-07 10:23:42
+* @description 针对表【menu(菜单表)】的数据库操作Service实现
+* @createDate 2024-04-09 17:42:43
 */
 @Service
 public class MenuServiceImpl extends ServiceImpl<MenuMapper, Menu>

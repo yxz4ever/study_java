@@ -5,12 +5,26 @@
 <mapper namespace="com.xrluo.day02.mapper.UserMapper">
 
     <resultMap id="BaseResultMap" type="com.xrluo.day02.domain.User">
-            <id property="userId" column="user_id" jdbcType="INTEGER"/>
-            <result property="username" column="username" jdbcType="VARCHAR"/>
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="userName" column="user_name" jdbcType="VARCHAR"/>
             <result property="password" column="password" jdbcType="VARCHAR"/>
+            <result property="depid" column="depid" jdbcType="BIGINT"/>
+            <result property="email" column="email" jdbcType="VARCHAR"/>
+            <result property="mobile" column="mobile" jdbcType="VARCHAR"/>
+            <result property="status" column="status" jdbcType="CHAR"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="modifyTime" column="modify_time" jdbcType="TIMESTAMP"/>
+            <result property="lasloginTime" column="laslogin_time" jdbcType="TIMESTAMP"/>
+            <result property="sex" column="sex" jdbcType="CHAR"/>
+            <result property="avatar" column="avatar" jdbcType="VARCHAR"/>
+            <result property="description" column="description" jdbcType="VARCHAR"/>
     </resultMap>
 
     <sql id="Base_Column_List">
-        user_id,username,password
+        id,user_name,password,
+        depid,email,mobile,
+        status,create_time,modify_time,
+        laslogin_time,sex,avatar,
+        description
     </sql>
 </mapper>

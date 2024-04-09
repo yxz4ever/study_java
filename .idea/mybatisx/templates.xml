@@ -61,7 +61,6 @@
                 </ModuleInfoGo>
               </list>
             </option>
-            <option name="needToStringHashcodeEquals" value="true" />
             <option name="needsComment" value="true" />
             <option name="needsModel" value="true" />
             <option name="relativePackage" value="domain" />
@@ -69,12 +68,12 @@
             <option name="tableUIInfoList">
               <list>
                 <TableUIInfo>
-                  <option name="className" value="Menu" />
-                  <option name="tableName" value="menu" />
+                  <option name="className" value="Dept" />
+                  <option name="tableName" value="dept" />
                 </TableUIInfo>
                 <TableUIInfo>
-                  <option name="className" value="Permission" />
-                  <option name="tableName" value="permission" />
+                  <option name="className" value="Menu" />
+                  <option name="tableName" value="menu" />
                 </TableUIInfo>
                 <TableUIInfo>
                   <option name="className" value="Role" />
@@ -83,10 +82,6 @@
                 <TableUIInfo>
                   <option name="className" value="RoleMenu" />
                   <option name="tableName" value="role_menu" />
-                </TableUIInfo>
-                <TableUIInfo>
-                  <option name="className" value="RolePermission" />
-                  <option name="tableName" value="role_permission" />
                 </TableUIInfo>
                 <TableUIInfo>
                   <option name="className" value="User" />

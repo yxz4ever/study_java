@@ -5,14 +5,23 @@
 <mapper namespace="com.xrluo.day02.mapper.MenuMapper">
 
     <resultMap id="BaseResultMap" type="com.xrluo.day02.domain.Menu">
-            <id property="menuId" column="menu_id" jdbcType="INTEGER"/>
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="parentId" column="parent_id" jdbcType="BIGINT"/>
             <result property="menuName" column="menu_name" jdbcType="VARCHAR"/>
-            <result property="url" column="url" jdbcType="VARCHAR"/>
-            <result property="parentMenuId" column="parent_menu_id" jdbcType="INTEGER"/>
+            <result property="path" column="path" jdbcType="VARCHAR"/>
+            <result property="component" column="component" jdbcType="VARCHAR"/>
+            <result property="perms" column="perms" jdbcType="VARCHAR"/>
+            <result property="icon" column="icon" jdbcType="VARCHAR"/>
+            <result property="type" column="type" jdbcType="CHAR"/>
+            <result property="orderNum" column="order_num" jdbcType="DOUBLE"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="modifyTime" column="modify_time" jdbcType="TIMESTAMP"/>
     </resultMap>
 
     <sql id="Base_Column_List">
-        menu_id,menu_name,url,
-        parent_menu_id
+        id,parent_id,menu_name,
+        path,component,perms,
+        icon,type,order_num,
+        create_time,modify_time
     </sql>
 </mapper>
